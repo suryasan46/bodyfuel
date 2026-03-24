@@ -40,7 +40,6 @@
       color: #e2e8f0;
       margin-left: 20px;
       text-decoration: none;
-      transition: 0.3s;
     }
 
     nav a:hover {
@@ -54,7 +53,7 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      background: linear-gradient(to right, #020617, #0f172a);
+      background: url('gym2.jpg') center/cover no-repeat;
     }
 
     .hero h2 {
@@ -65,7 +64,7 @@
     .hero p {
       font-size: 1.2rem;
       margin-bottom: 30px;
-      color: #94a3b8;
+      color: #e2e8f0;
     }
 
     .btn {
@@ -76,21 +75,11 @@
       color: black;
       font-weight: 600;
       cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: #0ea5e9;
     }
 
     .section {
       padding: 60px 40px;
       text-align: center;
-    }
-
-    .section h3 {
-      margin-bottom: 30px;
-      font-size: 2rem;
     }
 
     .grid {
@@ -108,6 +97,16 @@
 
     .card:hover {
       transform: translateY(-10px);
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    img:hover {
+      transform: scale(1.05);
     }
 
     footer {
@@ -130,7 +129,7 @@
   </nav>
 </header>
 
-<!-- HOME -->
+<!-- HERO -->
 <section id="home" class="hero">
   <h2>Build Your Best Body & Lifestyle</h2>
   <p>Premium fitness tips, aesthetic lifestyle ideas & top products</p>
@@ -147,6 +146,27 @@
 <section id="lifestyle" class="section">
   <h3>🧘 Lifestyle</h3>
   <p>Daily routines, productivity hacks & wellness tips.</p>
+</section>
+
+<!-- IMAGE GALLERY -->
+<section class="section">
+  <h3>🔥 Training Inspiration</h3>
+  <div class="grid">
+    <div class="card">
+      <img src="gym1.jpg">
+      <p>Strength Training</p>
+    </div>
+
+    <div class="card">
+      <img src="gym2.jpg">
+      <p>Full Body Workout</p>
+    </div>
+
+    <div class="card">
+      <img src="gym3.jpg">
+      <p>Kettlebell Training</p>
+    </div>
+  </div>
 </section>
 
 <!-- PRODUCTS -->
@@ -168,7 +188,6 @@
 <!-- CONTACT -->
 <section id="contact" class="section">
   <h3>📩 Contact</h3>
-  <p>Have questions? Reach out!</p>
   <button class="btn" onclick="contactMe()">Contact Me</button>
 </section>
 
@@ -176,10 +195,9 @@
   <p>© 2026 BodyFuel Premium</p>
 </footer>
 
-<!-- JAVASCRIPT FUNCTIONS -->
 <script>
-  function scrollToSection(sectionId) {
-    document.getElementById(sectionId).scrollIntoView();
+  function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView();
   }
 
   function buyNow() {
