@@ -2,22 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Strength Training</title>
+  <title>Strength Training Blog</title>
 
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Poppins', sans-serif;
       background: #0f172a;
       color: #e2e8f0;
-      line-height: 1.6;
-      padding: 20px;
+      line-height: 1.8;
     }
 
-    h1 {
+    /* HEADER (Blog Title) */
+    .header {
       text-align: center;
+      padding: 40px 20px;
+      background: #020617;
+    }
+
+    .header h1 {
       color: #38bdf8;
-      margin-bottom: 20px;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      color: #94a3b8;
+      font-size: 1rem;
+    }
+
+    /* BLOG CONTAINER */
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #1e293b;
+      padding: 30px;
+      border-radius: 15px;
     }
 
     h2 {
@@ -26,7 +46,7 @@
     }
 
     p {
-      margin: 10px 0;
+      margin: 15px 0;
     }
 
     ul {
@@ -34,34 +54,35 @@
     }
 
     li {
-      margin-bottom: 8px;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: auto;
-      background: #1e293b;
-      padding: 25px;
-      border-radius: 12px;
+      margin-bottom: 10px;
     }
 
     .highlight {
       color: #38bdf8;
-      font-weight: bold;
+      font-weight: 600;
     }
 
+    /* QUOTE STYLE */
+    .quote {
+      margin: 20px 0;
+      padding: 15px;
+      border-left: 4px solid #38bdf8;
+      font-style: italic;
+      color: #cbd5f5;
+      background: #0f172a;
+    }
+
+    /* BUTTON */
     .btn {
       display: block;
-      margin: 30px auto 0;
+      margin: 40px auto 0;
       padding: 12px 25px;
       background: #38bdf8;
       color: black;
-      border: none;
       border-radius: 25px;
-      cursor: pointer;
-      font-weight: bold;
       text-align: center;
       text-decoration: none;
+      font-weight: bold;
       width: fit-content;
     }
 
@@ -73,77 +94,76 @@
 
 <body>
 
-<div class="container">
+  <!-- BLOG HEADER -->
+  <div class="header">
+    <h1>💪 Strength Training</h1>
+    <p>Get Stronger, Leaner, Healthier</p>
+  </div>
 
-  <h1>💪 Strength Training: Get Stronger, Leaner, Healthier</h1>
+  <!-- BLOG CONTENT -->
+  <div class="container">
 
-  <p>
-    Strength training is a core part of overall fitness. It helps you build muscle, burn fat, and improve long-term health.
-  </p>
+    <p>
+      Strength training is a core part of overall fitness. It helps you build muscle, burn fat, and improve long-term health.
+    </p>
 
-  <h2>🔥 Why Strength Training Matters</h2>
-  <ul>
-    <li>Builds lean muscle → Boosts metabolism and burns more calories</li>
-    <li>Reduces body fat → Helps with weight management</li>
-    <li>Prevents muscle loss as you age</li>
-    <li>Increases bone density → Lowers risk of osteoporosis</li>
-    <li>Improves balance & stability → Reduces risk of falls</li>
-    <li>Supports joint health → Helps prevent injuries</li>
-    <li>Enhances mental health → Improves mood and focus</li>
-  </ul>
+    <div class="quote">
+      “Strong is not just about muscles — it's about discipline, consistency, and mindset.”
+    </div>
 
-  <p class="highlight">Helps manage chronic conditions like:</p>
-  <ul>
-    <li>Arthritis</li>
-    <li>Back pain</li>
-    <li>Diabetes</li>
-    <li>Heart disease</li>
-  </ul>
+    <h2>🔥 Why Strength Training Matters</h2>
+    <ul>
+      <li>Builds lean muscle → Boosts metabolism</li>
+      <li>Reduces body fat → Helps weight management</li>
+      <li>Prevents muscle loss with age</li>
+      <li>Improves balance & stability</li>
+      <li>Enhances mental health</li>
+    </ul>
 
-  <h2>🏋️ Types of Strength Training</h2>
-  <ul>
-    <li><span class="highlight">Bodyweight exercises</span> – Push-ups, squats, lunges, planks</li>
-    <li><span class="highlight">Resistance bands</span> – Affordable and beginner-friendly</li>
-    <li><span class="highlight">Free weights</span> – Dumbbells, barbells, kettlebells</li>
-    <li><span class="highlight">Weight machines</span> – Controlled gym equipment</li>
-    <li><span class="highlight">Suspension training</span> – Uses straps for balance & strength</li>
-  </ul>
+    <p class="highlight">Also helps manage:</p>
+    <ul>
+      <li>Arthritis</li>
+      <li>Back pain</li>
+      <li>Diabetes</li>
+      <li>Heart disease</li>
+    </ul>
 
-  <h2>🚀 How to Get Started</h2>
-  <ul>
-    <li>🔥 Warm up for 5–10 minutes</li>
-    <li>🎯 Choose weight for 12–15 reps</li>
-    <li>📈 Increase weight gradually</li>
-    <li>🔁 1 good set to fatigue is enough</li>
-    <li>🧘 Rest 1 day between same muscle group</li>
-    <li>⚠️ Stop if you feel pain</li>
-    <li>✅ Focus on form & breathing</li>
-  </ul>
+    <h2>🏋️ Types of Strength Training</h2>
+    <ul>
+      <li><span class="highlight">Bodyweight</span> – Push-ups, squats</li>
+      <li><span class="highlight">Resistance bands</span></li>
+      <li><span class="highlight">Free weights</span></li>
+      <li><span class="highlight">Machines</span></li>
+      <li><span class="highlight">Suspension training</span></li>
+    </ul>
 
-  <h2>⏱️ How Often Should You Train?</h2>
-  <p><span class="highlight">Strength training:</span> At least 2 times per week</p>
-  <p><span class="highlight">Cardio:</span> 150 min moderate OR 75 min intense</p>
+    <h2>🚀 How to Get Started</h2>
+    <ul>
+      <li>Warm up 5–10 minutes</li>
+      <li>12–15 reps per set</li>
+      <li>Increase weight gradually</li>
+      <li>Rest between workouts</li>
+      <li>Focus on form</li>
+    </ul>
 
-  <h2>📈 When Will You See Results?</h2>
-  <ul>
-    <li>Visible results in 2–3 sessions/week</li>
-    <li>Strength improves gradually</li>
-    <li><span class="highlight">Consistency = Results 💯</span></li>
-  </ul>
+    <h2>⏱️ Training Frequency</h2>
+    <p><span class="highlight">Strength:</span> 2x per week</p>
+    <p><span class="highlight">Cardio:</span> 150 min moderate or 75 min intense</p>
 
-  <h2>✅ Key Takeaway</h2>
-  <p>
-    Strength training is simple and powerful. You don’t need hours in the gym — just consistency and proper technique.
-  </p>
+    <h2>📈 Results</h2>
+    <p>
+      With consistency, you’ll see results in just a few weeks. Strength builds gradually, but the long-term benefits are powerful.
+    </p>
 
-  <p class="highlight">
-    👉 Build muscle | 👉 Burn fat | 👉 Stay healthy for life
-  </p>
+    <h2>✅ Key Takeaway</h2>
+    <p class="highlight">
+      👉 Build muscle | Burn fat | Stay healthy for life
+    </p>
 
-  <!-- BACK BUTTON -->
-  <a href="fitness.html" class="btn">⬅ Back to Fitness</a>
+    <!-- BACK BUTTON -->
+    <a href="fitness.html" class="btn">⬅ Back to Fitness</a>
 
-</div>
+  </div>
 
 </body>
 </html>
